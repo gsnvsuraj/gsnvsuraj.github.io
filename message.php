@@ -34,8 +34,8 @@
 
 	    //Recipients
 	    $mail->setFrom('junkyymail123456@gmail.com', 'Mailer');
-	    $mail->addAddress('junkyymail123456@gmail.com', 'Joe User');     // Add a recipient
-	    $mail->addAddress('gsnv.suraj@gmail.com');               // Name is optional
+	    //$mail->addAddress('junkyymail123456@gmail.com', 'Joe User');     // Add a recipient
+	    $mail->addAddress('gsnv.suraj@gmail.com', 'Suraj');               // Name is optional
 	    $mail->addReplyTo('junkyymail123456@gmail.com', 'Information');
 	    //$mail->addCC('cc@example.com');
 	    //$mail->addBCC('junkyymail123456@gmail.com');
@@ -51,8 +51,8 @@
 	    $mail->AltBody = "Name : ".$name."\nEmail : ".$email."\nMessage : ".$message."\nDate & Time :".date("d M Y h:i:s A");
 
 	    $mail->send();
-	    echo 'Message has been sent';
-			header("location:index.html");
+	    //echo 'Message has been sent';
+			exit(header("location:index.html"));
 	} catch (Exception $e) {
 	    echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
 	}
