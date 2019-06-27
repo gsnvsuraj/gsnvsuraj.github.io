@@ -11,6 +11,7 @@ body, html{
 .heading{
 	color: white;
 	transform: translate(0px,-70px);
+	font-size: 36px;
 }
 
 .content{
@@ -29,10 +30,10 @@ body, html{
 }
 
 .proHead{
-	font-size: 30px;
+	font-size: 50px;
 	padding: 40px;
-	align-items: center;
-	justify-content: center;
+	font-family: 'Merriweather', serif;
+	margin: 0;
 }
 
 div.projects{
@@ -60,13 +61,13 @@ imag {
   width: 100%;
 }
 
-h1 {
+h1.proTitle {
   font-weight: 600;
   font-size: 36px;
   margin: 0 0 15px;
 }
 
-p {
+p.proDesc {
   font-weight: 300;
   line-height: 24px;
   margin: 0 0 30px 0;
