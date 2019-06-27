@@ -8,6 +8,12 @@
 
 	$mail = new PHPMailer(true);
 
+	$name = $_POST['name'];
+	$email = $_POST['email'];
+	$message = $_POST['message'];
+
+	date_default_timezone_set('Asia/Kolkata');
+
 	try {
 	    //Server settings
 	    //$mail->SMTPDebug = 4;                                       // Enable verbose debug output
@@ -40,12 +46,13 @@
 
 	    // Content
 	    $mail->isHTML(true);                                  // Set email format to HTML
-	    $mail->Subject = 'Here is the subject';
-	    $mail->Body    = 'This is the HTML message body <b>in bold!</b>';
-	    $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
+	    $mail->Subject = 'This is message from your Website';
+	    $mail->Body    = "<b>Name : </b>".$name."<br><br><b>Email : </b>".$email."<br><br><b>Message : </b>".$message."<br><br><b>Date & Time : </b>".date("d M Y h:i:s A");
+	    $mail->AltBody = "Name : ".$name."\nEmail : ".$email."\nMessage : ".$message."\nDate & Time :".date("d M Y h:i:s A");
 
 	    $mail->send();
 	    echo 'Message has been sent';
+			header("location:index.html");
 	} catch (Exception $e) {
 	    echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
 	}
