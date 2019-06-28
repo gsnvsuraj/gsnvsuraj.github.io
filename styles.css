@@ -1,5 +1,5 @@
 body, html{
-	background-image: url("bg1.jpg");
+	background-image: url("images/bg.jpg");
 	
 	height: 100%;
 
@@ -19,7 +19,7 @@ body, html{
 	transform: translate(0px,-70px);
 }
 
-/*This is the styling of cards*/
+/*This is the styling of project cards*/
 
 .span {
   display: inline-block;
