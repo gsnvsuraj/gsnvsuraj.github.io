@@ -8,6 +8,28 @@
 
 	$mail = new PHPMailer(true);
 
+	function getUserIP()
+	{
+    // Get real visitor IP behind CloudFlare network
+    	if (isset($_SERVER["HTTP_CF_CONNECTING_IP"])) {
+        	$_SERVER['REMOTE_ADDR'] = $_SERVER["HTTP_CF_CONNECTING_IP"];
+            $_SERVER['HTTP_CLIENT_IP'] = $_SERVER["HTTP_CF_CONNECTING_IP"];
+    	}
+    	$client  = @$_SERVER['HTTP_CLIENT_IP'];
+    	$forward = @$_SERVER['HTTP_X_FORWARDED_FOR'];
+    	$remote  = $_SERVER['REMOTE_ADDR'];
+
+    	if(filter_var($client, FILTER_VALIDATE_IP))
+        	$ip = $client;
+    	elseif(filter_var($forward, FILTER_VALIDATE_IP))
+        	$ip = $forward;
+    	else
+        	$ip = $remote;
+
+    	return $ip;
+	}
+	$user_ip = getUserIP();
+
 	$name = $_POST['name'];
 	$email = $_POST['email'];
 	$message = $_POST['message'];
@@ -47,8 +69,8 @@
 	    // Content
 	    $mail->isHTML(true);                                  // Set email format to HTML
 	    $mail->Subject = 'This is message from your Website';
-	    $mail->Body    = "<b>Name : </b>".$name."<br><br><b>Email : </b>".$email."<br><br><b>Message : </b>".$message."<br><br><b>Date & Time : </b>".date("d M Y h:i:s A");
-	    $mail->AltBody = "Name : ".$name."\nEmail : ".$email."\nMessage : ".$message."\nDate & Time :".date("d M Y h:i:s A");
+	    $mail->Body    = "<b>Name : </b>".$name."<br><br><b>Email : </b>".$email."<br><br><b>Message : </b>".$message."<br><br><b>Date & Time : </b>".date("d M Y h:i:s A")."<br><br><b>IP Add : </b>".$user_ip;
+	    $mail->AltBody = "Name : ".$name."\nEmail : ".$email."\nMessage : ".$message."\nDate & Time :".date("d M Y h:i:s A")."\nIP Add :".$user_ip;
 
 	    $mail->send();
 	    //echo 'Message has been sent';
