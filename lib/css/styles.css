@@ -1,11 +1,11 @@
 body, html{
-	background-image: url("../../images/bg.jpg");
+    background-image: url("../../images/bg.jpg");
 	
 	height: 100%;
 
 	background-position: center;
-  	background-repeat: no-repeat;
-  	background-size: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .heading{
@@ -72,43 +72,11 @@ p.proDesc {
   line-height: 24px;
   margin: 0 0 30px 0;
 }
-/*a {
-  text-decoration: none;
-  text-transform: uppercase;
-  color: #FF3434;
-  font-weight: bold;
-  font-size: 14px;
-  position: relative;
-  display: inline-block;
-  z-index: 1;
-  padding: 5px;
-  left: -5px;
-}
-a:hover {
-  color: #FF3434;
-}
-a::before {
-  content: '';
-  z-index: -1;
-  position: absolute;
-  top: calc(50%);
-  left: 0;
-  width: 100%;
-  height: 40%;
-  pointer-events: none;
-  background:   #80EDFF;
-  transform: scale3d(0, 1, 1);
-  transform-origin: 0% 50%;
-  transition: transform 0.33s;
-}
-a:hover::before {
-          transform: scale3d(1, 1, 1);
-          transform-origin: 0% 50%;
-}*/
+
 div.imag {
   height: 300px;
   width: 100%;
-  background: url("https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg");
+  background: url("../../images/pexels-photo-546819.jpg");
   background-position: center;
   background-size: cover;
 }
