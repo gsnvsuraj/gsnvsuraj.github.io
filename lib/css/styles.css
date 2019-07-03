@@ -53,18 +53,31 @@ div.containers {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 30px;
+  margin: 50px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.45);
 }
+
+div.containers > div {
+  /* these are the flex items */
+  flex: 1;
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
  
-imag {
+.imag {
   width: 100%;
 }
 
-h1.proTitle {
-  font-weight: 600;
-  font-size: 36px;
-  margin: 0 0 15px;
+.proTitle {
+    display: block;
+    font-size: 2em;
+    margin-top: 0.67em;
+    margin-bottom: 0.67em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
 }
 
 p.proDesc {
