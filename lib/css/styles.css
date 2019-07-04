@@ -21,104 +21,12 @@ body, html{
 
 /*This is the styling of project cards*/
 
-.span {
-  display: inline-block;
-  width: 50px;
-  height: 5px;
-  background-color: #FF3434;
-  margin-bottom: 30px;
-}
-
 .proHead{
-	font-size: 50px;
-	padding: 40px;
-	font-family: 'Merriweather', serif;
-	margin: 0;
+    font-size: 50px;
+    padding: 40px;
+    font-family: 'Merriweather', serif;
+    margin: 0;
 }
-
-div.projects{
-	background-color: #80EDFF;
-}
-
-div.main {
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-div.containers {
-  background-color: white;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin: 50px;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.45);
-}
-
-div.containers > div {
-  /* these are the flex items */
-  flex: 1;
-
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-}
- 
-.imag {
-  width: 100%;
-}
-
-.proTitle {
-    display: block;
-    font-size: 2em;
-    margin-top: 0.67em;
-    margin-bottom: 0.67em;
-    margin-left: 0;
-    margin-right: 0;
-    font-weight: bold;
-}
-
-p.intDesc {
-  font-weight: 300;
-  line-height: 24px;
-  margin: 0 0 30px 0;
-}
-
-div.imag {
-    height: 300px;
-    width: 100%;
-
-    background-position: center;
-    background-size: cover;
-}
-
-div.text-container {
-  margin: 60px 45px 55px;
-}
-
-@media screen and (min-width: 768px) {
-  div.containers {
-    flex-direction: row;
-    width: 100%;
-  }
-div.imag {
-    height: 420px;
-    min-width: 360px;
-  }
- div.text-container {
-    margin: 0 60px;
-    max-width: 660px;
-  }
-}
-@media screen and (min-width: 1024px) {
-  div.containers {
-    max-width: 1200px;
-  }
-}
-
-/*This is the styling of cards*/
 
 p.proDesc {
     font-family: 'Josefin Sans', sans-serif;
@@ -132,7 +40,7 @@ h4 {
   margin-bottom: 1em;
 }
 
-.proj{
+.projects{
     background: linear-gradient( 135deg, #185a9d, #43cea2);
 }
 
