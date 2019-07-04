@@ -41,7 +41,7 @@ div.projects{
 }
 
 div.main {
-  height: 80vh;
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -80,18 +80,18 @@ div.containers > div {
     font-weight: bold;
 }
 
-p.proDesc {
+p.intDesc {
   font-weight: 300;
   line-height: 24px;
   margin: 0 0 30px 0;
 }
 
 div.imag {
-  height: 300px;
-  width: 100%;
-  background: url("../../images/pexels-photo-546819.jpg");
-  background-position: center;
-  background-size: cover;
+    height: 300px;
+    width: 100%;
+
+    background-position: center;
+    background-size: cover;
 }
 
 div.text-container {
@@ -118,6 +118,125 @@ div.imag {
   }
 }
 
+/*This is the styling of cards*/
+
+p.proDesc {
+    font-family: 'Josefin Sans', sans-serif;
+ 
+}
+
+h4 {
+  margin-top: 0px; 
+  font-size: 2em; 
+  letter-spacing: -.1em; 
+  margin-bottom: 1em;
+}
+
+.proj{
+    background: linear-gradient( 135deg, #185a9d, #43cea2);
+}
+
+.maincards {
+  width: 100%;
+  padding-left: 16px;
+  padding-right: 16px;
+  /*min-height: 980px;*/
+
+  display: flex;
+}
+
+.g-card p, h4, span { 
+    color: #fafafa;
+}
+
+.seprate-line {
+    width: 20px;
+    height: 3px;
+    background: white;
+}
+
+.g-card {
+  margin: auto;
+  top: 30px;
+  float: left;
+  margin-left: 6%;
+  position: relative;
+  width: 320px;
+  min-height: 400px;
+  overflow: hidden;
+  background: linear-gradient(135deg, #02aab0, #00cdac);
+  padding: 60px 30px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  box-shadow: 20px 30px 50px 1px rgba(0,0,0,.3);
+}
+
+.hover-btn {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    line-height: 1;
+    padding-left: 26px;
+    text-transform: uppercase;
+    padding-bottom: 4px;
+    font-size: 13px
+}
+
+@media (min-width: 800px) {
+    .hover-btn {
+        font-size:16px;
+        padding-left: 36px
+    }
+}
+
+.hover-btn::before {
+    content: '';
+    display: block;
+    position: absolute;
+    height: 1px;
+    background: currentColor;
+    left: 0;
+    width: 20px;
+    top: 50%;
+    margin-top: -1px;
+    transition: transform .3s cubic-bezier(.42,.01,.23,1);
+    transform-origin: left
+}
+
+.hover-btn:hover::before {
+    transform: scaleX(1.333)
+}
+
+@media (min-width: 800px) {
+    .hover-btn::before {
+        width:30px
+    }
+}
+
+.hover-btn span {
+    display: inline-block;
+    transition: transform .3s cubic-bezier(.42,.01,.23,1)
+}
+
+.hover-btn:hover span {
+    transform: translateX(12px)
+}
+
+@media (min-width: 800px) {
+    .hover-btn:hover span {
+        transform: translateX(18px)
+    }
+}
+
+@media (max-width: 765px) {
+    .g-card {
+        margin-left: 0;
+        top: 0;
+        margin-top: 35px;
+    }
+}
+
 /*This is the styling of the contact me form*/
 
 .container {
@@ -125,6 +244,8 @@ div.imag {
     margin-left: auto;
     margin-right: auto;
     padding: 1em;
+
+    margin-top: 50px;
 }
  
 ul {
