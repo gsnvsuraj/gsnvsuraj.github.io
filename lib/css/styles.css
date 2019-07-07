@@ -18,6 +18,26 @@ body, html{
 	transform: translate(0px,-70px);
 }
 
+/*This is the styling of about me*/
+
+.abHead{
+    font-size: 50px;
+    padding: 0px;
+    font-family: 'Merriweather', serif;
+}
+
+.abDesc{
+    padding: 30px;
+}
+
+/*This is the styling of edu details*/
+
+.edHead{
+    font-size: 50px;
+    padding: 0px;
+    font-family: 'Merriweather', serif;
+}
+
 /*This is the styling of project cards*/
 
 .proHead{
