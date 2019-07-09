@@ -32,10 +32,40 @@ body, html{
 
 /*This is the styling of edu details*/
 
+.education{
+    background-color: #fcfcfc;
+    padding: 20px;
+    padding-bottom: 40px;
+}
+
 .edHead{
     font-size: 50px;
-    padding: 0px;
+    padding: 10px;
     font-family: 'Merriweather', serif;
+    margin: 20px;
+}
+
+.edBox{
+    border-width: 1px;
+    padding: 20px;
+    border-style: solid;
+    margin: 35px;
+    box-shadow: 5px 10px 8px #888888;
+}
+
+.edTitle{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.edDegree{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.edTime{
+    font-size: 14px;
+    font-weight: 400;
 }
 
 /*This is the styling of project cards*/
