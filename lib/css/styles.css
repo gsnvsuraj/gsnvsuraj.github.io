@@ -277,7 +277,7 @@ ul {
 }
  
 .brandname {
-    background: #77a6f7;
+    background: #dcd9d9;
 }
  
 .brandname h3, .brandname ul {
@@ -286,7 +286,7 @@ ul {
 }
  
 .contact {
-    background: #d3e3fc;
+    background: #f5f5f5;
 }
  
 .contact form {
@@ -314,13 +314,13 @@ ul {
 }
  
 .contact form button {
-    background: #77a6f7;
+    background: #dcd9d9;
     border: 0;
     text-transform: uppercase;
 }
  
 .contact form button:hover, .contact form button:focus {
-    background: #92bde7;
+    background: #bebaba;
     color: #fff;
     outline: 0;
     transition: background-color 0.5s ease-out;
