@@ -1,5 +1,3 @@
-# My Website
-This site is designed to describe about myself and a way to contact me.
-It also acts as my Portfolio.
+# Portfolio Website
 
-This is currently hosted at [gsnvsuraj.tk](http://gsnvsuraj.tk) .
+The website is hosted at [gsnvsuraj.tk](http://gsnvsuraj.tk) .
