@@ -17,6 +17,7 @@ body, html{
 	color: white;
 	transform: translate(0px,-70px);
 	font-size: 36px;
+    font-family: Georgia, serif;
 }
 
 .content{
@@ -34,7 +35,7 @@ body, html{
 .abHead{
     font-size: 50px;
     padding: 0px;
-    font-family: 'Merriweather', serif;
+    font-family: 'Cursive', serif;
     margin-bottom: 0px;
 }
 
@@ -53,7 +54,7 @@ body, html{
 .edHead{
     font-size: 50px;
     padding: 10px 10px 0px 10px;
-    font-family: 'Merriweather', serif;
+    font-family: 'Cursive', serif;
     margin: 20px 20px 0px 20px;
 }
 
@@ -98,7 +99,7 @@ body, html{
 .proHead{
     font-size: 50px;
     padding: 40px 40px 0px 40px;
-    font-family: 'Merriweather', serif;
+    font-family: 'weather', serif;
     margin: 0;
 }
 
@@ -235,7 +236,7 @@ body, html{
 .pfHead{
     font-size: 50px;
     padding: 10px 40px;
-    font-family: 'Merriweather', serif;
+    font-family: 'Cursive', serif;
     margin: 0;
     padding-bottom: 0px;
 }
@@ -286,7 +287,7 @@ footer{
  
 .footer-distributed h3{
 	color:  #ffffff;
-	font: normal 36px 'Cookie', cursive;
+	font: normal 36px 'Book Antiqua', cursive;
 	margin: 0;
 }
  
