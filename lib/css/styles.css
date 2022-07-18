@@ -18,6 +18,7 @@ body, html{
 	transform: translate(0px,-70px);
 	font-size: 36px;
     font-family: Georgia, serif;
+    text-shadow: 2px 2px 4px #000;
 }
 
 .content{
@@ -289,6 +290,7 @@ footer{
 	color:  #ffffff;
 	font: normal 36px 'Book Antiqua', cursive;
 	margin: 0;
+    text-shadow: 2px 2px 4px #777;
 }
  
 .footer-distributed h3 span{
