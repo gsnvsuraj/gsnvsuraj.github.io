@@ -127,6 +127,13 @@ body, html{
     overflow: hidden;
 }
 
+.projectImg{
+    width: 260px;
+    height: 160px;
+    padding-bottom: 20px;
+    border-radius: 10px;
+}
+
 .p-card p, h4, span { 
     color: black;
 }
