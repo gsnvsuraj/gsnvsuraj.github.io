@@ -238,7 +238,7 @@ body, html{
 }
 
 .pfHeading{
-    padding-bottom: 20px;
+    padding-bottom: 40px;
 }
 
 .pfHead{
@@ -249,13 +249,43 @@ body, html{
     padding-bottom: 0px;
 }
 
-.techLine{
+.techSection{
+    width: 100%;
+    display: inline-block;
+    height: auto;
+}
+
+.techBox{
+    margin: auto;
     font-size: 18px;
     padding: 20px;
-    background-color: white;
-    margin: 20px;
+    float: left;
+    margin-left: 6%;
+    position: relative;
+    width: 320px;
+    height: 300px;
+}
+
+.techImg{
+    margin: 10px;
+    width: 250px;
     border-radius: 40px;
-    border: 1px solid #dcd9d9;
+    padding-right: 2px;
+    position: relative;
+    top: -200px;
+}
+
+.techImg:hover{
+    opacity: 0.2;
+}
+
+.techLine{
+    font-size: 18px;
+    flex-basis: 50%;
+    padding-top: 20px;
+    padding-left: 2px;
+    width: 250px;
+    height: 150px;
 }
 
 .pfTitle{

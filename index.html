@@ -5,10 +5,10 @@
 
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="lib/css/bootstrap.min.css">
-	<script src="lib/js/jquery.min.js"></script>
-	<script src="lib/js/popper.min.js"></script>
-	<script src="lib/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="./lib/css/bootstrap.min.css">
+	<script src="./lib/js/jquery.min.js"></script>
+	<script src="./lib/js/popper.min.js"></script>
+	<script src="./lib/js/bootstrap.min.js"></script>
 
 	<link rel="stylesheet" type="text/css" href="lib/css/styles.css">
 
@@ -113,7 +113,7 @@
 		</div>
 		<div class="maincards">
 			<div class="p-card">
-				<img src="./images/quizAppImg.png" class="projectImg" alt="Quiz App Image">
+				<img src="./images/projects/quizAppImg.png" class="projectImg" alt="Quiz App Image">
 				<div class="seprate-line"></div>
 				<h4 class="title">Quiz App</h4>
 				<p class="proDesc">Quiz application built using React. The application is built on a single page using variuos components. Presently the quiz is built upon anime shows.</p>
@@ -121,7 +121,7 @@
 			</div>
 			  
 		  	<div class="p-card">
-				<img src="./images/paintAppImg.png" class="projectImg" alt="Paint App Image">
+				<img src="./images/projects/paintAppImg.png" class="projectImg" alt="Paint App Image">
 		  		<div class="seprate-line"></div>
 		  		<h4 class="title">Paint Application</h4>
 		  		<p class="proDesc">Built on HTML5 canvas and Vanilla JS. There are various tools and shapes that can be used for drawing. The painting can be exported as an image.</p>
@@ -129,7 +129,7 @@
 			</div>
 
 			<div class="p-card">
-				<img src="./images/portfolioAppImg.png" class="projectImg" alt="Portfolio App Image">
+				<img src="./images/projects/portfolioAppImg.png" class="projectImg" alt="Portfolio App Image">
 				<div class="seprate-line"></div>
 				<h4 class="title">Portfolio App</h4>
 			 	<p class="proDesc">A website built for showcasing a person's information, skills  and achievements. Built purely using HTML and CSS along with the help of Canva.</p>
@@ -147,28 +147,36 @@
 				<div class="line"></div>
 			</div>
 
-			<div class="techLine">
-				<div><span class="pfTitle">Programming Languages :</span> Java, Python, C++, OOPS</div>
-			</div>
+			<div class="techSection">
+				<div class="techBox">
+					<div class="techLine"><span class="pfTitle">Programming Languages</span><br> Java, Python <br> C++, OOPS</div>
+					<div><img src="./images/skills/programming.png" class="techImg" alt="Programming Lanuages Image" ontouchstart="reduceOpacity(this)" ontouchend="increaseOpacity(this)"></div>
+				</div>
 
-			<div class="techLine">
-				<div><span class="pfTitle">Web Technologies :</span> Bootstrap, JavaScript, React</div>
-			</div>
+				<div class="techBox">
+					<div class="techLine"><span class="pfTitle">Web Technologies</span><br> HTML, CSS,  Bootstrap <br> JavaScript, React</div>
+					<div><img src="./images/skills/web.png" class="techImg" alt="Web Technologies Image" ontouchstart="reduceOpacity(this)" ontouchend="increaseOpacity(this)"></div>
+				</div>
 
-			<div class="techLine">
-				<div><span class="pfTitle">Database Management System :</span> MySQL, PostgreSQL, RDMS, Hibernate-ORM</div>
-			</div>
+				<div class="techBox">
+					<div class="techLine"><span class="pfTitle">Database Management System</span><br> MySQL, PostgreSQL, RDMS, Hibernate-ORM</div>
+					<div><img src="./images/skills/dbms.png" class="techImg" alt="Database Management System Image" ontouchstart="reduceOpacity(this)" ontouchend="increaseOpacity(this)"></div>
+				</div>
 
-			<div class="techLine">
-				<div><span class="pfTitle">Tools :</span> Quarkus, Git, Kafka, Docker, Shell Scripting, Spring Boot</div>
-			</div>
+				<div class="techBox">
+					<div class="techLine"><span class="pfTitle">Tools</span><br> Quarkus, Git, Kafka, Docker, Shell Scripting, Spring Boot</div>
+					<div><img src="./images/skills/tools.png" class="techImg" alt="Tools Image" ontouchstart="reduceOpacity(this)" ontouchend="increaseOpacity(this)"></div>
+				</div>
 
-			<div class="techLine">
-				<div><span class="pfTitle">Operating System :</span> Windows, Linux/Unix</div>
-			</div>
+				<div class="techBox">
+					<div class="techLine"><span class="pfTitle">Operating System</span><br> Windows, Linux, Unix</div>
+					<div><img src="./images/skills/os.png" class="techImg" alt="Operating System Image" ontouchstart="reduceOpacity(this)" ontouchend="increaseOpacity(this)"></div>
+				</div>
 
-			<div class="techLine">
-				<div><span class="pfTitle">Other Technologies :</span> Kubernetes, Helm, Agile Framework, Jenkins, REST API</div>
+				<div class="techBox">
+					<div class="techLine"><span class="pfTitle">Other Technologies</span><br> Kubernetes, Helm, Agile Framework, Jenkins, REST API</div>
+					<div><img src="./images/skills/technologies.png" class="techImg" alt="Other Technologies Image" ontouchstart="reduceOpacity(this)" ontouchend="increaseOpacity(this)"></div>
+				</div>
 			</div>
 		</center>
 	</div>
@@ -215,6 +223,18 @@
 		</div>
 
 	</footer>
+
+	<script>
+
+		function reduceOpacity(obj) {
+			obj.style.opacity = 0.2;
+		}
+
+		function increaseOpacity(obj) {
+			obj.style.opacity = 1.0;
+		}
+
+	</script>
 
 </body>
 </html>
